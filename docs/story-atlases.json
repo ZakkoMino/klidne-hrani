@@ -1,0 +1,69 @@
+{
+  "width": 1086,
+  "height": 1448,
+  "columns": [
+    0,
+    362,
+    724,
+    1086
+  ],
+  "crop_note": "Row boundaries estimated from full visual inspection. Use these instead of equal 362px row divisions. A few pixels of safe inset prevents adjacent panel seams.",
+  "atlases": [
+    {
+      "file": "story-atlas-1.png",
+      "rows": [
+        0,
+        361,
+        723,
+        1060,
+        1448
+      ],
+      "stories": [
+        "spill-clean",
+        "wash-hands",
+        "plant-seed",
+        "rain-boots"
+      ],
+      "limitations": [
+        "Thin white panel seams",
+        "rain-boots middle panel appears to contain an extra spare boot"
+      ]
+    },
+    {
+      "file": "story-atlas-2.png",
+      "rows": [
+        0,
+        347,
+        719,
+        1077,
+        1448
+      ],
+      "stories": [
+        "banana",
+        "present",
+        "blocks",
+        "drawing"
+      ],
+      "limitations": []
+    },
+    {
+      "file": "story-atlas-3.png",
+      "rows": [
+        0,
+        349,
+        698,
+        1043,
+        1448
+      ],
+      "stories": [
+        "dog-water",
+        "tidy-toys",
+        "sandwich",
+        "pajamas"
+      ],
+      "limitations": [
+        "Final sandwich panel adds a top slice of bread that was absent from the first panel"
+      ]
+    }
+  ]
+}

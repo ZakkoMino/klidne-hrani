@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "profileName": "Hráč",
+  "locale": "cs-CZ",
+  "purpose": "cognitive_and_language_practice",
+  "clinicalTreatment": false,
+  "session": {
+    "blockVisibleLimitMs": 120000,
+    "blocksPerSession": 2,
+    "sessionVisibleLimitMs": 240000,
+    "breakMinMs": 60000,
+    "parentConfirmResume": true,
+    "suggestedSessionsPerWeek": 3,
+    "maxPlannedSessionsPerDay": 1,
+    "parentOptionalBlockMs": 180000,
+    "parentOptionalSessionMs": 360000,
+    "persistConsumedTime": true
+  },
+  "ui": {
+    "minTouchTargetCssPx": 64,
+    "minGapCssPx": 16,
+    "backgroundMusic": false,
+    "flashing": false,
+    "forcedReading": false,
+    "requiredSpeech": false,
+    "dragRequired": false,
+    "onboardingTrials": 2
+  },
+  "comfort": {
+    "childChoices": [
+      "okay",
+      "break",
+      "end",
+      "unsure",
+      "notAsked"
+    ],
+    "labelsCs": [
+      "Je mi dobře",
+      "Chci pauzu",
+      "Chci skončit",
+      "Nevím",
+      "Neptali jsme se"
+    ],
+    "pictureChoice": true,
+    "reasonRequired": false,
+    "parentObservationSeparate": true,
+    "unknownIsComfortable": false,
+    "breakRequestMeansPain": false,
+    "scheduledBreaksEvenWithoutComplaints": true
+  },
+  "adaptation": {
+    "windowCompletedTrials": 10,
+    "minDistinctLocalDates": 2,
+    "minCorrectUnassisted": 8,
+    "maxSupportedTrials": 1,
+    "parentConfirmation": true,
+    "applyNextSession": true,
+    "oneParameterAtATime": true,
+    "consecutiveWrongOfferPause": 3,
+    "languageStoryLevelAutoAdvance": false
+  },
+  "games": {
+    "G1": {
+      "levels": [
+        {
+          "id": "L1",
+          "grid": [
+            2,
+            2
+          ],
+          "sequenceLength": 2
+        },
+        {
+          "id": "L2",
+          "grid": [
+            2,
+            2
+          ],
+          "sequenceLength": 3
+        },
+        {
+          "id": "L3",
+          "grid": [
+            2,
+            2
+          ],
+          "sequenceLength": 4
+        }
+      ],
+      "showTargetMs": 1500,
+      "gapMs": 500,
+      "repeatWithinSequence": false
+    },
+    "G2": {
+      "initialMode": "A",
+      "modes": {
+        "A": {
+          "steps": 1
+        },
+        "B": {
+          "steps": 2
+        },
+        "C": {
+          "steps": 1,
+          "parentSelectedLanguageTarget": true
+        }
+      },
+      "keepVocabularyAcrossAandB": true
+    },
+    "G3": {
+      "levels": {
+        "L1": {
+          "scenes": 2
+        },
+        "L2": {
+          "scenes": 3
+        },
+        "L3": {
+          "scenes": 3,
+          "parentSelectedQuestion": true
+        }
+      },
+      "speechRecording": false,
+      "autoLanguageScoring": false
+    },
+    "G4": {
+      "objectsByLevel": [
+        2,
+        4,
+        6
+      ],
+      "targetVisible": true,
+      "responseDeadlineMs": null,
+      "exactlyOneTarget": true
+    }
+  },
+  "privacy": {
+    "storage": "IndexedDB",
+    "accounts": false,
+    "telemetry": false,
+    "microphone": false,
+    "camera": false,
+    "export": [
+      "JSON",
+      "CSV"
+    ],
+    "medicalReportBundled": false
+  },
+  "notEstablished": [
+    "clinicalEfficacy",
+    "deviceCompatibility",
+    "individualOptimalDose"
+  ]
+}

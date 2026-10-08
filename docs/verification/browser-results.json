@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-10-08T08:42:05.330Z",
+  "browser": "154.0.4258.62",
+  "results": [
+    "memory: complete highest implemented level and persist first response",
+    "helper: complete highest implemented level and persist first response",
+    "story: complete highest implemented level and persist first response",
+    "search: complete highest implemented level and persist first response",
+    "stop: complete highest implemented level and persist first response",
+    "sort: complete highest implemented level and persist first response",
+    "path: complete highest implemented level and persist first response",
+    "rhythm: complete highest implemented level and persist first response",
+    "Pause interrupts animated walk without late success",
+    "Reload restores paused session and does not reset elapsed time",
+    "Unknown comfort stays unknown; completed day cannot restart in child UI",
+    "Two-minute cap starts enforced break, including instruction time",
+    "390px layout fits viewport and parent hold gate opens",
+    "Offline reload + all 110 Czech audio clips + browser WAV decoding",
+    "No uncaught browser errors"
+  ],
+  "errors": []
+}

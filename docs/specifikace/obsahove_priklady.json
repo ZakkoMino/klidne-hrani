@@ -1,0 +1,94 @@
+{
+  "contentVersion": "0.1-examples",
+  "status": "examples_for_implementation_not_complete_content_pack",
+  "G1": {
+    "contentId": "memory-example-01",
+    "level": "L1",
+    "target": [
+      "house-1",
+      "house-3"
+    ]
+  },
+  "G2": [
+    {
+      "contentId": "instruction-a-01",
+      "mode": "A",
+      "audioText": "Dej jablko medvědovi.",
+      "knownWordsRequired": [
+        "jablko",
+        "medvěd",
+        "dát"
+      ],
+      "targets": [
+        {
+          "item": "apple",
+          "recipient": "bear"
+        }
+      ]
+    },
+    {
+      "contentId": "instruction-b-01",
+      "mode": "B",
+      "audioText": "Dej jablko medvědovi. Potom dej mrkev králíkovi.",
+      "knownWordsRequired": [
+        "jablko",
+        "medvěd",
+        "mrkev",
+        "králík",
+        "dát",
+        "potom"
+      ],
+      "targets": [
+        {
+          "item": "apple",
+          "recipient": "bear"
+        },
+        {
+          "item": "carrot",
+          "recipient": "rabbit"
+        }
+      ]
+    }
+  ],
+  "G3": {
+    "contentId": "story-water-01",
+    "scenes": [
+      {
+        "id": "spill",
+        "description": "Dítě převrhne sklenici vody."
+      },
+      {
+        "id": "cloth",
+        "description": "Voda je na stole a dítě bere utěrku."
+      },
+      {
+        "id": "wipe",
+        "description": "Dítě utře stůl."
+      }
+    ],
+    "acceptedOrders": [
+      [
+        "spill",
+        "cloth",
+        "wipe"
+      ]
+    ],
+    "questions": [
+      {
+        "text": "Co se stalo první?",
+        "acceptableResponse": "Ukáže převrženou sklenici nebo popíše rozlití vody."
+      }
+    ],
+    "parentModel": "Voda se rozlila. Vezmeme utěrku. Stůl utřeme."
+  },
+  "G4": {
+    "contentId": "search-example-01",
+    "level": "L1",
+    "targetIcon": "fox",
+    "options": [
+      "fox",
+      "cup"
+    ],
+    "targetCount": 1
+  }
+}

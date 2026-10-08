@@ -1,0 +1,1 @@
+import fs from 'node:fs';import {AUDIO_TEXTS} from '../dist/content.js';fs.writeFileSync('scripts/audio-texts.json',JSON.stringify(AUDIO_TEXTS,null,2));console.log(Object.keys(AUDIO_TEXTS).length+' audio phrases');

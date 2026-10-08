@@ -1,0 +1,13 @@
+node_modules/
+qa/
+*.zip
+*.tar.gz
+.env*
+!.env.example
+.openai/
+.sites-runtime/
+.DS_Store
+docs/private/
+private/
+*ocni-nalez*
+*medical-report*

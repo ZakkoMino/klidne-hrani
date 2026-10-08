@@ -1,0 +1,7 @@
+import {defaults,validData} from './logic.js';
+const key='klidne-hrani-checkpoint-v1';let db;let queue=Promise.resolve();
+function open(){return new Promise((resolve,reject)=>{const r=indexedDB.open('klidne-hrani',1);r.onupgradeneeded=()=>r.result.createObjectStore('state');r.onsuccess=()=>{db=r.result;resolve(db);};r.onerror=()=>reject(r.error);});}
+export async function load(){await open();const data=await new Promise((resolve,reject)=>{const r=db.transaction('state').objectStore('state').get('main');r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error);});let checkpoint;try{checkpoint=JSON.parse(localStorage.getItem(key)||'null');}catch{}const newer=checkpoint&&(!data||checkpoint.savedAt>data.savedAt)?checkpoint:data;if(!newer)return defaults();if(!validData(newer.data))throw Error('Uložená data mají neznámý formát. Nejsou přepsána.');return newer.data;}
+export function checkpoint(data){try{localStorage.setItem(key,JSON.stringify({savedAt:Date.now(),data}));}catch{}}
+export function save(data){const snapshot=structuredClone(data);queue=queue.catch(()=>{}).then(()=>new Promise((resolve,reject)=>{const tx=db.transaction('state','readwrite');tx.objectStore('state').put({savedAt:Date.now(),data:snapshot},'main');tx.oncomplete=resolve;tx.onerror=()=>reject(tx.error);}));return queue;}
+export async function clear(){await queue;localStorage.removeItem(key);await new Promise((resolve,reject)=>{const tx=db.transaction('state','readwrite');tx.objectStore('state').clear();tx.oncomplete=resolve;tx.onerror=()=>reject(tx.error);});}
