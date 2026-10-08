@@ -22,3 +22,7 @@ Místní `npm` wrapper na tomto počítači odkazoval na chybějící npm-cli. K
 Anonymizovaná dokumentace prošla kontrolou textu, názvů souborů, všech XML částí Wordu a metadat PNG. Word byl nově vytvořen a všech 13 stran vizuálně zkontrolováno. Původní snímek nálezu a individuální měření nejsou ve veřejné kopii.
 
 Celá sada prohlížečových scénářů byla znovu spuštěna v podadresáři /klidne-hrani/, včetně offline reloadu a všech 110 zvukových souborů. Herní mechanismy se při přechodu na veřejné hostování neměnily.
+
+## Verze 1.0.1 — opakované hraní pro testování
+
+Denní zámek je odstraněný z hlavní obrazovky i obsluhy spuštění. V prohlížeči byly dokončeny a znovu spuštěny tři návštěvy v jednom dni; opakované spuštění funguje i po reloadu a historie zůstává uložená. Prošlo 14 testů pravidel, kontrola veřejné dokumentace a všech 15 existujících integračních kontrol včetně offline provozu. Údaj o denním zámku výše popisuje původní verzi 1.0.0.

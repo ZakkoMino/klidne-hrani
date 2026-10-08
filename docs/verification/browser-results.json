@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-08T08:42:05.330Z",
+  "checkedAt": "2026-10-08T10:46:25.562Z",
   "browser": "154.0.4258.62",
   "results": [
     "memory: complete highest implemented level and persist first response",
@@ -12,7 +12,7 @@
     "rhythm: complete highest implemented level and persist first response",
     "Pause interrupts animated walk without late success",
     "Reload restores paused session and does not reset elapsed time",
-    "Unknown comfort stays unknown; completed day cannot restart in child UI",
+    "Unknown comfort stays unknown; repeated same-day sessions work after reload and preserve history",
     "Two-minute cap starts enforced break, including instruction time",
     "390px layout fits viewport and parent hold gate opens",
     "Offline reload + all 110 Czech audio clips + browser WAV decoding",

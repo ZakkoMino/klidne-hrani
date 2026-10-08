@@ -1,4 +1,6 @@
-# Technické řešení 1.0.0
+# Technické řešení 1.0.1
+
+Od verze 1.0.1 je na žádost rodiče vypnuté omezení počtu návštěv za den pro testování. Po dokončení lze na hlavní obrazovce ihned spustit další dvojici her, i po obnovení stránky. Záznamy předchozích návštěv se uchovávají. Délka jednotlivého bloku, mezibloková pauza a obnova rozpracované návštěvy fungují dál. Původní Word specifikace a její JSON příklad popisují doporučený domácí plán; tato změna ruší jeho vynucování jako denního zámku.
 
 ## Architektura
 

@@ -4,7 +4,7 @@
 2. Počkejte na **Připraveno i bez internetu**. První načtení stáhne obrázky a 110 českých hlasových souborů (celý balíček přibližně 13–16 MB).
 3. Nabídka Chrome **⋮ → Instalovat aplikaci** (na některých verzích **Přidat na plochu**). Potvrďte název. PWA se spouští vlastní ikonou a samostatným oknem.
 4. Otevřete ikonu na ploše, zkuste zvuk a jednou obnovte aplikaci. Poté můžete vyzkoušet režim letadlo. První stažení a instalace vyžadují internet.
-5. V části **Pro rodiče** podržte tlačítko dvě sekundy. Začněte úrovní 1 a dvěma dvouminutovými bloky. Výchozí plán je třikrát týdně, nejvýše jedna dětská návštěva denně. Aplikace nevynucuje konkrétní dny v týdnu.
+5. V části **Pro rodiče** podržte tlačítko dvě sekundy. Začněte úrovní 1 a dvěma dvouminutovými bloky. Výchozí domácí plán je třikrát týdně. Pro testování je od verze 1.0.1 denní limit spuštění vypnutý: po dokončení se vraťte na výběr her a můžete hned spustit další dvojici. Aplikace nevynucuje konkrétní dny v týdnu.
 
 Na první hraní zvolte třeba **Pomocník se zvířátky** a **Co bylo potom?**. Rodič je přítomen; text nemusí dítě číst. Ve slovníkovém úvodu si ověřte, že dítě rozumí předmětům a zvířatům. Pokud slovům nerozumí, nejprve si je ukažte mimo hodnocení nebo zvolte jinou hru.
 

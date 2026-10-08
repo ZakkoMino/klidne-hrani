@@ -1,5 +1,5 @@
 export const MAX_LEVELS={memory:3,helper:2,story:3,search:3,stop:1,sort:3,path:3,rhythm:2};
-export const VERSION='1.0.0';
+export const VERSION='1.0.1';
 export const GAMES=[
  {id:'memory',name:'Zvířátka na návštěvě',short:'Zapamatuj si cestu',emoji:'🦊',color:'blue',area:'Paměť',intro:'Podívej, kam jde liška. Potom klepni na stejné domečky ve stejném pořadí.',offline:'Položte čtyři velké karty. Dotkněte se dvou po sobě a nechte dítě zopakovat pořadí.'},
  {id:'helper',name:'Pomocník se zvířátky',short:'Poslechni a pomoz',emoji:'🐻',color:'yellow',area:'Porozumění',intro:'Poslechni si zadání. Klepni na předmět a potom na zvířátko, kterému ho dáš.',offline:'Použijte známé předměty: „Dej lžíci na stůl.“ Později přidejte druhý známý krok.'},
