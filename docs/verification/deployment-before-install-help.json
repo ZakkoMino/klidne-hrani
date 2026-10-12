@@ -1,0 +1,80 @@
+{
+  "checkedAt": "2026-10-12T12:26:37.920Z",
+  "url": "https://zakkomino.github.io/klidne-hrani/",
+  "files": [
+    {
+      "file": "/",
+      "status": 200,
+      "url": "https://zakkomino.github.io/klidne-hrani/",
+      "type": "text/html; charset=utf-8",
+      "bytes": 808,
+      "cacheControl": "max-age=600",
+      "matchesLocal": true,
+      "sha256": "40f13a793cc79601afe27d004f46afcfa7f87e1b1af9a3ab2f334c6324749c93"
+    },
+    {
+      "file": "index.html",
+      "status": 200,
+      "url": "https://zakkomino.github.io/klidne-hrani/index.html",
+      "type": "text/html; charset=utf-8",
+      "bytes": 808,
+      "cacheControl": "max-age=600",
+      "matchesLocal": true,
+      "sha256": "40f13a793cc79601afe27d004f46afcfa7f87e1b1af9a3ab2f334c6324749c93"
+    },
+    {
+      "file": "manifest.webmanifest?v=1.1.0",
+      "status": 200,
+      "url": "https://zakkomino.github.io/klidne-hrani/manifest.webmanifest?v=1.1.0",
+      "type": "application/manifest+json; charset=utf-8",
+      "bytes": 611,
+      "cacheControl": "max-age=600",
+      "matchesLocal": true,
+      "sha256": "1e7f33720c67a45f2c46916e27de7a5397df163d6e983abaec81580e87768f32"
+    },
+    {
+      "file": "sw.js",
+      "status": 200,
+      "url": "https://zakkomino.github.io/klidne-hrani/sw.js",
+      "type": "application/javascript; charset=utf-8",
+      "bytes": 5428,
+      "cacheControl": "max-age=600",
+      "matchesLocal": true,
+      "sha256": "e6bb4abceda8c32c2a5d596a69882975b827de8898a49bfe91bacc2b9741ef1d"
+    },
+    {
+      "file": "assets/icon-192.png",
+      "status": 200,
+      "url": "https://zakkomino.github.io/klidne-hrani/assets/icon-192.png",
+      "type": "image/png",
+      "bytes": 4181,
+      "cacheControl": "max-age=600",
+      "matchesLocal": true,
+      "sha256": "1a4ab6c40944b4a96301a062c6ce6057570cd417987c5f6ec06f3b6f34692b12",
+      "width": 192,
+      "height": 192
+    },
+    {
+      "file": "assets/icon-512.png",
+      "status": 200,
+      "url": "https://zakkomino.github.io/klidne-hrani/assets/icon-512.png",
+      "type": "image/png",
+      "bytes": 14976,
+      "cacheControl": "max-age=600",
+      "matchesLocal": true,
+      "sha256": "3054f9e74e4e477e4dd0cd356535174d7ca24e57e0579d1b2ade704df26b0f04",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "file": "install.js",
+      "status": 200,
+      "url": "https://zakkomino.github.io/klidne-hrani/install.js",
+      "type": "application/javascript; charset=utf-8",
+      "bytes": 4904,
+      "cacheControl": "max-age=600",
+      "matchesLocal": true,
+      "sha256": "b2dd8d1bb803f5475885bfafbf43a340d6fc3b61b29848d8733510d028fa783c"
+    }
+  ]
+}

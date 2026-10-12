@@ -1,0 +1,16 @@
+{
+  "checkedAt": "2026-10-12T12:36:46.508Z",
+  "browser": "154.0.8037.99",
+  "url": "http://127.0.0.1:4175/klidne-hrani/",
+  "results": [
+    "Direct URL opens help; missing event does not claim installation",
+    "Late event enables button; user gesture calls prompt once; acceptance is not completion",
+    "appinstalled does not overclaim Android package completion; existing local data preserved",
+    "390px help remains usable; closing returns to game selection",
+    "dismissed: clear retry guidance and preserved local data",
+    "failure: clear retry guidance and preserved local data"
+  ],
+  "errors": [],
+  "syntheticInstallEvents": true,
+  "androidDeviceTest": false
+}

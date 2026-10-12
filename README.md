@@ -4,6 +4,8 @@ Osm českých her pro společné hraní rodiče a dítěte. Webová aplikace fun
 
 **[Spustit hry](https://zakkomino.github.io/klidne-hrani/)** · [Instalace na Android](docs/INSTALACE.md)
 
+Chrome hlásí „již nainstalováno“, ale hry nejdou otevřít? Verze 1.1.1 nabízí [přímé instalační okno](https://zakkomino.github.io/klidne-hrani/?install=1). [Rozbor chyby nabídky Chrome 155 a ověření nasazení](docs/verification/ANDROID_INSTALACE.md).
+
 ## Hry
 
 Paměťové domečky, plnění pokynů, skládání příběhů, hledání obrázků, semafor, třídění, plánování cesty a rytmus. Dvanáct obrázkových příběhů, 125 českých hlasových nahrávek, dva krátké bloky s přestávkou a přehled pro rodiče.

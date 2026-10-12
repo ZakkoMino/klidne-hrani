@@ -155,3 +155,4 @@ const installer=createInstaller({notify,onOfflineReady:ready=>{offlineReady=read
 try{data=await storage.load();if(data.active?.status==='playing'){data.active.status='paused';persist();}if(data.active)history.pushState({playing:true},'');render();}catch(err){shell(`<section class="panel"><h1>Uložení není dostupné</h1><p>${esc(err.message)}</p><p>Zkuste běžné okno prohlížeče s povoleným místním úložištěm. Existující data jsme nepřepsali.</p><button class="quiet" data-action="install">Jak aplikaci nainstalovat</button></section>`);}
 
 installer.register();
+if(new URL(location.href).searchParams.get('install')==='1')installer.open();

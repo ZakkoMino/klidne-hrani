@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-10-12T12:26:02.943Z",
+  "browser": "154.0.8037.99",
+  "url": "https://zakkomino.github.io/klidne-hrani/",
+  "manifestId": "https://zakkomino.github.io/klidne-hrani/",
+  "installabilityErrors": [],
+  "installPrompt": true,
+  "desktopInstall": true,
+  "osState": {
+    "badgeCount": 0,
+    "fileHandlers": []
+  },
+  "androidDeviceTest": false
+}

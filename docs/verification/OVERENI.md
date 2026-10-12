@@ -38,3 +38,9 @@ Denní zámek je odstraněný z hlavní obrazovky i obsluhy spuštění. V prohl
 - Vizuální kontrola rozhraní příběhu, Pomocníka, domovské obrazovky a rodičovského přehledu.
 
 Omezení: nebylo připojeno fyzické zařízení Android. Jeho systémová chyba „již nainstalováno, ale nelze otevřít“ proto není prohlášena za opravenou pouhým desktopovým testem. Web má opravené ID a postup pro bezpečné obnovení instalace. Nový zvuk je automaticky přehratelný a dekódovatelný; srozumitelnost pro konkrétní dítě na konkrétním reproduktoru musí ověřit rodič.
+
+## Verze 1.1.1 — upřesnění instalace na Androidu
+
+Příčinu chybného hlášení nabídky Chrome 155 podle společného originu dokládá [rozbor zdrojového kódu](ANDROID_INSTALACE.md). Nasazení znovu prošlo kontrolou HTTP odpovědí, shody souborů a skutečnou instalací v čistém desktopovém Chrome; tento test nenahrazuje instalaci WebAPK na Androidu.
+
+Upravena instalační nápověda a přidán odkaz `?install=1`. Hláška po `appinstalled` už nepředjímá dokončení balíčku na Androidu. Prošlo 14 testů pravidel, kontrola syntaxe, obsahu a veřejné dokumentace. Skript `scripts/qa-install-ui.mjs` ověřuje přímý odkaz, chybějící i pozdější instalační událost, jednorázové vyvolání až kliknutím, zachování dat a rozložení na 390 px. Události jsou v tomto UI testu syntetické a neprokazují skutečnou instalaci. Nativní desktopová instalace je ověřována samostatně skriptem `scripts/qa-install.mjs`.
