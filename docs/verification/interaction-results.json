@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-10-12T06:47:36.653Z",
+  "browser": "154.0.8037.99",
+  "results": [
+    "Real touch events: two-step helper, outside drop and pointer cancellation; exactly one result",
+    "390px helper drop works; wrong recipient is recorded rather than silently accepted",
+    "Touch sorting into the matching box",
+    "390px touch story arrangement and swapping; evaluate only after Hotovo",
+    "Pause cancels a live drag without scoring",
+    "memory: explicit spoken instruction with automatic sound off; partial answer retained",
+    "helper: explicit spoken instruction with automatic sound off; partial answer retained",
+    "story: explicit spoken instruction with automatic sound off; partial answer retained",
+    "search: explicit spoken instruction with automatic sound off; partial answer retained",
+    "stop: explicit spoken instruction with automatic sound off; partial answer retained",
+    "sort: explicit spoken instruction with automatic sound off; partial answer retained",
+    "path: explicit spoken instruction with automatic sound off; partial answer retained",
+    "rhythm: explicit spoken instruction with automatic sound off; partial answer retained",
+    "Timed task does not expire during spoken help; pause cancels audio continuation",
+    "Install rejection has useful guidance and does not erase results"
+  ],
+  "errors": []
+}

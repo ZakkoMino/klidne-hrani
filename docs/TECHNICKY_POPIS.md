@@ -1,4 +1,6 @@
-# Technické řešení 1.0.1
+# Technické řešení 1.1.0
+
+Aktuální změny ovládání, hlasu a instalace shrnuje [verze 1.1.0](ZMENY_1.1.0.md). Pocity se již nevyplňují; historická pole zůstávají kompatibilní.
 
 Od verze 1.0.1 je na žádost rodiče vypnuté omezení počtu návštěv za den pro testování. Po dokončení lze na hlavní obrazovce ihned spustit další dvojici her, i po obnovení stránky. Záznamy předchozích návštěv se uchovávají. Délka jednotlivého bloku, mezibloková pauza a obnova rozpracované návštěvy fungují dál. Původní Word specifikace a její JSON příklad popisují doporučený domácí plán; tato změna ruší jeho vynucování jako denního zámku.
 
@@ -6,13 +8,16 @@ Od verze 1.0.1 je na žádost rodiče vypnuté omezení počtu návštěv za den
 
 Statická PWA bez běhových závislostí: HTML, CSS a JavaScript ES moduly. Pro osm malých her není potřeba server ani framework. Od původního návrhu React/TypeScript se implementace liší jednodušším sestavením, menší závislostí na nástrojích a plně lokálním během. Stejné herní jádro testuje `node:test`.
 
-- `dist/content.js`: osm her, známá slova, 12 příběhů, texty pro 110 zvuků, limity úrovní.
+- `dist/content.js`: osm her, známá slova, 12 příběhů, texty pro 125 zvuků, limity úrovní.
 - `dist/logic.js`: generování, vyhodnocení, validace záloh, pravidlo nabídky vyšší úrovně, viditelný čas.
 - `dist/app.js`: dotykové rozhraní a stavová logika návštěvy.
+- `dist/drag.js`: Pointer Events, přetahování, neplatné puštění a přerušení.
+- `dist/audio.js`: jeden přehrávač MP3, rušení čekání a perkusivní rytmus.
+- `dist/install.js`: instalační dialog, jednorázová událost Chrome, potvrzení instalace, aktualizace.
 - `dist/storage.js`: IndexedDB a nouzový checkpoint v localStorage, oddělené od serveru.
 - `scripts/build.mjs`: deterministická cache podle SHA obsahu všech nasazovaných souborů.
 - `dist/sw.js`: cache aplikace, obrázků i hlasů; aktualizace převezme nová verze po uzavření starých oken.
-- `manifest.webmanifest`: standalone PWA, ikony 192/512, relativní scope a start URL.
+- `manifest.webmanifest`: standalone PWA, ikony 192/512, relativní scope a start URL, jednoznačné ID `/klidne-hrani/`.
 
 Nasazuje se **výhradně dist/** přes GitHub Pages. Repozitář a anonymizované zadání jsou veřejné; originální zdravotní podklady ani jejich historie nejsou součástí této kopie.
 
@@ -37,7 +42,7 @@ Vyšší úroveň se pouze doporučí u vhodných her, pokud posledních 10 plat
 
 ## Data
 
-Schéma 1: settings, sessions, trials, observations, active. Rozlišujeme nácvik, dokončenost, první odpověď, druh podpory, rodičovské posouzení rytmu/jazyka a důvod zneplatnění. Volba dítěte a pozorování dospělého jsou oddělené. Neznámá pohoda se nepřevádí na souhlas. Poznámky se vykreslují escapované; CSV chrání začátky vzorců. Import kontroluje formát, podporované hry, úrovně, záznamy i stav návštěvy; limit souboru 10 MB. Historie není cloudová zdravotní dokumentace.
+Schéma 1: settings, sessions, trials, observations, active. Rozlišujeme nácvik, dokončenost, první odpověď, druh podpory, rodičovské posouzení rytmu/jazyka a důvod zneplatnění. Historická pole volby dítěte zůstávají kompatibilní; v nových návštěvách je `notAsked`. Neznámá pohoda se nepřevádí na souhlas. Poznámky se vykreslují escapované; CSV chrání začátky vzorců. Import kontroluje formát, podporované hry, úrovně, záznamy i stav návštěvy; limit souboru 10 MB. Historie není cloudová zdravotní dokumentace.
 
 Aktuální omezení: používání jediné karty; generované ilustrace a syntetický hlas potřebují rodičovské posouzení s konkrétním dítětem; volný rodičovský zápis není standardizovaný dotazník; prokazatelný účinek na běžný život nebyl měřen.
 
@@ -55,3 +60,5 @@ node scripts/serve.mjs
 Pro integrační zkoušku použijte Playwright a nainstalovaný Edge, server na 4173. `PLAYWRIGHT_MODULE` může ukazovat na modul mimo repo a `PLAYWRIGHT_CHANNEL` může zvolit jiný podporovaný prohlížeč; výchozí je msedge. Testové scénáře ukládají screenshoty a výsledky do ignorovaného `qa/`. Publikovatelný záznam se po ověření kopíruje do `docs/verification/`.
 
 GitHub Actions ověřuje pravidla, obsah a deterministické sestavení offline cache při každém pushi/PR.
+
+Další prohlížečové testy: `scripts/qa-interactions.mjs` (dotykové vstupy a zadání) a `scripts/qa-install.mjs` (Chrome, izolovaný profil, instalace a následná odinstalace testovací aplikace). Při změně hostovacího podadresáře je třeba upravit manifest ID i jeho kontrolu; samotné relativní `./` jako ID není správně.

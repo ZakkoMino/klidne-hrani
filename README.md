@@ -6,7 +6,9 @@ Osm českých her pro společné hraní rodiče a dítěte. Webová aplikace fun
 
 ## Hry
 
-Paměťové domečky, plnění pokynů, skládání příběhů, hledání obrázků, semafor, třídění, plánování cesty a rytmus. Dvanáct obrázkových příběhů, 110 českých hlasových pokynů, dva krátké bloky s přestávkou a přehled pro rodiče.
+Paměťové domečky, plnění pokynů, skládání příběhů, hledání obrázků, semafor, třídění, plánování cesty a rytmus. Dvanáct obrázkových příběhů, 125 českých hlasových nahrávek, dva krátké bloky s přestávkou a přehled pro rodiče.
+
+Ve verzi 1.1.0 lze předměty předávat zvířátkům přetažením, třídit tvary do krabiček a přesouvat obrázky příběhu. Každý úkol má tlačítko **Poslechnout zadání**. Otázka na pocity se nezobrazuje a denní počet spuštění zůstává neomezený pro testování. [Změny a ověření 1.1.0](docs/ZMENY_1.1.0.md).
 
 Výsledky zůstávají v prohlížeči zařízení. Bez účtu dítěte, reklam, analytiky, mikrofonu a cloudového přenosu výsledků. Export JSON/CSV a obnova ze zálohy jsou v rodičovském přehledu. Hry jsou pomůckou pro procvičování; nejsou diagnostikou ani ověřenou léčbou.
 

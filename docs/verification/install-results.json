@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-10-12T07:03:08.041Z",
+  "browser": "154.0.8037.99",
+  "url": "http://127.0.0.1:4173/klidne-hrani/",
+  "manifestId": "http://127.0.0.1:4173/klidne-hrani/",
+  "installabilityErrors": [],
+  "installPrompt": true,
+  "desktopInstall": true,
+  "osState": {
+    "badgeCount": 0,
+    "fileHandlers": []
+  },
+  "androidDeviceTest": false
+}

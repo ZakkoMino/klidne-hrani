@@ -1,0 +1,12 @@
+{
+  "checkedAt": "2026-10-12T06:59:40.714Z",
+  "browser": "154.0.8037.99",
+  "oldIdentity": "/",
+  "newIdentity": "/klidne-hrani/",
+  "offeredWhileOldInstalled": false,
+  "offeredAfterRemoval": true,
+  "oldTestAppRemoved": true,
+  "manualInstallationViaCDP": true,
+  "serviceWorkerEnabled": true,
+  "androidDeviceTest": false
+}
